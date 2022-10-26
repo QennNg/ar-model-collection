@@ -1,0 +1,313 @@
+/*body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+    margin: 0px;
+}*/
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+
+.nav-wrapper{
+    display: flex;
+    justify-content: center;
+    padding: 38px;
+    padding-top: 0;
+   }
+
+.nav-wrapper img{
+    width: 75vw;
+    height: auto;
+    /* background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+/* .left-side{
+    display: flex;
+} */
+
+/* .nav-wrapper > .left-side > div{
+    margin-right: 20px;
+    font-size: 0.9em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* text-transform: uppercase; 
+}*/
+
+.nav-link-wrapper{
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+    position: relative;
+    
+}
+
+.nav-link-wrapper a{
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+/* .nav-link-wrapper:hover{
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover{
+    color:black;
+} */
+
+
+
+/* This is where the tutorial code starts */
+/* .content-wrapper{
+    padding: 5%;
+} */
+
+.portfolio-items-wrapper{
+    display: grid;
+    /* padding-top: 1%; */
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.portfolio-item-wrapper{
+    position: relative;
+}
+
+.portfolio-img-background{
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img-text-wrapper{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo-wrapper img{
+    width: 0%;
+    margin-bottom: 20px;
+}
+
+.img-text-wrapper .subtitle{
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle{
+    font-weight: 600;
+    color: lightseagreen;
+}
+
+.img-text-wrapper .subtitle a{
+    transition: 1s;
+    font-weight: 600;
+    background-color: transparent;
+    box-shadow: 0 5px 0 rgba(0, 0, 100, 0);
+    color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle a{
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: #3a88e2;
+    box-shadow: 0 5px 0 rgb(0, 0, 100);
+}
+
+.img-darken{
+    transition: 1s;
+    filter: brightness(50%);
+}
+/* Between these comments are my own code :D */
+
+a {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #3a88e2;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 5px 0 rgb(0, 0, 100);
+    vertical-align: middle;
+    text-decoration: none;
+    text-align: center;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1em;
+    padding: 6px 4px;
+    margin: 4px;
+    /* border-right: 0px solid #999999;
+    border-bottom: 0px solid #999999;
+    border-top-width: 0px;
+    border-left-width: 0px; */
+}
+
+a:hover {
+    background-color: #3a88e2;
+    color: rgb(255, 255, 255);
+    border: 0px solid #78a3f3;
+}
+
+a:active {
+    box-shadow: none;
+    top: 5px;
+    color: rgb(255, 255, 255);
+    border-left: 0px solid rgb(0, 9, 100);
+    border-top: 0px solid rgb(0, 8, 100);
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+@media (orientation: portrait){
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-wrapper{
+        display: flex;
+        justify-content: center;
+        padding: 38px;
+        padding-top: 0;
+    }
+    
+    .nav-wrapper img{
+        width: 75vw;
+        height: auto;
+        /* background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat; */
+    }
+    .nav-link-wrapper{
+        height: 22px;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom 0.5s;
+        position: relative;
+        
+    }
+
+    .nav-link-wrapper a{
+        color: #8a8a8a;
+        text-decoration: none;
+        transition: color 0.5s;
+    }
+
+    .portfolio-items-wrapper{
+        display: grid;
+        /* padding-top: 1%; */
+        margin-top: 30px;
+        grid-template-columns: 1fr;
+    }
+    
+    .portfolio-item-wrapper{
+        position: relative;
+    }
+    
+    .portfolio-img-background{
+        height: 250px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .img-text-wrapper{
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 75%;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .logo-wrapper img{
+        width: 0%;
+        margin-bottom: 20px;
+    }
+    
+    .img-text-wrapper .subtitle{
+        transition: 1s;
+        font-weight: 600;
+        color: transparent;
+    }
+    
+    .img-text-wrapper:hover .subtitle{
+        font-weight: 600;
+        color: lightseagreen;
+    }
+    
+    .img-text-wrapper .subtitle a{
+        transition: 1s;
+        font-weight: 600;
+        background-color: transparent;
+        box-shadow: 0 5px 0 rgba(0, 0, 100, 0);
+        color: transparent;
+    }
+    
+    .img-text-wrapper:hover .subtitle a{
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+        background-color: #3a88e2;
+        box-shadow: 0 5px 0 rgb(0, 0, 100);
+    }
+    
+    .img-darken{
+        transition: 1s;
+        filter: brightness(50%);
+    }
+
+    /* .portfolio-img-background{
+        height: 75vh;
+        width: 90%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    } */
+    
+}
